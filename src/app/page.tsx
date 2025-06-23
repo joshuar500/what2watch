@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { Film, Users, Dice6, MessageCircle, ArrowRight } from 'lucide-react'
+import { Film, ArrowRight } from 'lucide-react'
 import { Movie } from '@/types/movie'
 import { MovieSelector } from '@/components/MovieSelector'
 import { DiceRoller } from '@/components/DiceRoller'
@@ -168,9 +168,9 @@ export default function Home() {
 
                 {/* Player 2's movies (positions 4-6) - show selected ones or empty slots */}
                 {Array.from({ length: 3 }).map((_, index) => {
-                  const movieIndex = index;
-                  const movie = player2Movies[movieIndex];
-                  const position = index + 4;
+                  const movieIndex = index
+                  const movie = player2Movies[movieIndex]
+                  const position = index + 4
 
                   if (movie) {
                     return (
@@ -183,7 +183,7 @@ export default function Home() {
                           {position}
                         </div>
                       </div>
-                    );
+                    )
                   } else {
                     return (
                       <div key={`empty-${position}`} className="relative">
@@ -195,7 +195,7 @@ export default function Home() {
                           {position}
                         </div>
                       </div>
-                    );
+                    )
                   }
                 })}
               </div>

@@ -53,7 +53,7 @@ export function DiceRoller({ onRoll, disabled = false, className }: DiceRollerPr
     <motion.div
       className={cn('flex flex-col items-center gap-4', className)}
       animate={showCelebration ? { y: [0, -5, 0] } : {}}
-      transition={{ duration: 0.4, ease: "easeOut" }}
+      transition={{ duration: 0.4, ease: 'easeOut' }}
     >
       <div className="relative">
         <motion.button
@@ -126,7 +126,7 @@ export function DiceRoller({ onRoll, disabled = false, className }: DiceRollerPr
                     y: [0, (Math.random() - 0.5) * 100]
                   }}
                   exit={{ opacity: 0 }}
-                  transition={{ duration: 0.8, ease: "easeOut" }}
+                  transition={{ duration: 0.8, ease: 'easeOut' }}
                   style={{
                     left: '50%',
                     top: '50%',

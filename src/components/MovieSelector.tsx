@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect, useCallback } from 'react'
-import { Search, X, Shuffle, Tv, Filter, Calendar, Star } from 'lucide-react'
+import { Search, X, Shuffle, Tv, Filter, Calendar } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Movie } from '@/types/movie'
 import { tmdbClient, WatchProvider } from '@/lib/tmdb'
@@ -271,10 +271,6 @@ export function MovieSelector({
       // Add movie
       onMoviesChange([...selectedMovies, movie])
     }
-  }
-
-  const clearSelection = () => {
-    onMoviesChange([])
   }
 
   const shuffleMovies = () => {
