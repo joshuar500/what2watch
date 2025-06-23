@@ -242,7 +242,7 @@ export default function Home() {
                 <div className="grid grid-cols-3 gap-1">
                   {player2Movies.map((movie, index) => (
                     <div key={movie.id} className="relative">
-                      <MovieCard movie={movie} showDetails={false} s />
+                      <MovieCard movie={movie} showDetails={false} />
                       <div className="absolute -top-1 -left-1 bg-purple-500 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs font-bold">
                         {index + 4}
                       </div>
